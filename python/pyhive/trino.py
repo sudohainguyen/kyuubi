@@ -136,7 +136,6 @@ class Cursor(PrestoCursor):
 # Type Objects and Constructors
 #
 
-
 # See types in trino-main/src/main/java/com/facebook/trino/tuple/TupleInfo.java
 FIXED_INT_64 = DBAPITypeObject(['bigint'])
 VARIABLE_BINARY = DBAPITypeObject(['varchar'])
