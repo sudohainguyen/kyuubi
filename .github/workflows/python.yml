@@ -22,10 +22,14 @@ on:
     branches:
       - master
       - branch-*
+    paths:
+      - python/**
   pull_request:
     branches:
       - master
       - branch-*
+    paths:
+      - python/**
 
 concurrency:
   group: python-${{ github.head_ref || github.run_id }}
