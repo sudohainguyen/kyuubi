@@ -21,11 +21,11 @@ on:
   push:
     branches:
       - master
-      - branch-*
+    #   - branch-*
   pull_request:
     branches:
       - master
-      - branch-*
+    #   - branch-*
 
 concurrency:
   group: test-${{ github.head_ref || github.run_id }}

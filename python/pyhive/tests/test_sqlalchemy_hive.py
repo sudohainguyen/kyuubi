@@ -61,7 +61,7 @@ _ONE_ROW_COMPLEX_CONTENTS = [
 # ]
 
 
-@pytest.mark.skip(reason="Temporarily disabled")
+# @pytest.mark.skip(reason="Temporarily disabled")
 class TestSqlAlchemyHive(unittest.TestCase, SqlAlchemyTestCase):
     def create_engine(self):
         return create_engine('hive://localhost:10000/default')
